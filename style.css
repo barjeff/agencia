@@ -1,0 +1,29 @@
+.containercards{
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.card-img-top{
+  margin-top: 5px;
+}
+
+.piedepagina {
+    background-color: #E2D784;
+    text-align: center;
+  }
+  
+  .piedepaginacontainer{
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+  }
+  
+  .piedepaginacont {
+    text-align: center;
+    padding: 30px;
+  }
+  .imgpiepag{
+    height: 40px;
+    width: auto;
+  }
