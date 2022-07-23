@@ -138,6 +138,28 @@ actividadesyexperiencia.addEventListener("click", function (e) {
     })
 })
 
+///// destinos
+const btnDestinos = document.getElementById("destinoss")
+btnDestinos.addEventListener("click", function (e) {
+    e.target
+    e.preventDefault()
+    //// Limpio el container ROWCARD para subir el nuevo render
+    const rowcard = document.querySelector(".rowcard");
+    rowcard.innerHTML = ""
+    /// OCULTO AL CARRUSEL
+    const carouselExampleCaptions = document.getElementById("carouselExampleCaptions")
+    carouselExampleCaptions.style.display = 'none';
+    /// MUESTO EL EFECTO CSS DE INSTAGRAM
+
+  
+
+    //// LLAMO AL ARRAY DE EXPERIENCIA Y CREO LA CARDS CON SU INFO
+    lugares.forEach((res) => {
+       nuevaCards(res)
+
+    })
+})
+
 
 
 
