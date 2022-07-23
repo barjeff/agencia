@@ -76,17 +76,31 @@ function nuevaCardsActividad(Actividades) {
 }
 
 /// esta en JQUERY  
+/*
+$(".option").click(function () {
+    $(".option").removeClass("active");
+    $(this).addClass("active");
+  });
+*/
 
-/*const option = document.querySelectorAll(".option") 
+//// intento fallido  REVISAR
+/*
+const option = document.querySelectorAll(".option");
+for (const divoption of option) {
+let estadoDom = divoption.classList
+divoption.addEventListener("click", function(e) {
+e.target
+let condicion = "option active"
+    if (estadoDom === condicion) {
+      return  divoption.remove("active")
+    } else if (estadoDom !== "active") {
+      return  divoption.className = "option active"
+    }
+}
+)
+}  */
 
-boton.addEventListener("click",function(e){
-    e.preventDefault()
-    const option = document.querySelectorAll(".option")
-    const btonActv = e.target;
-
-
-})
-} */
+//// FUNCIONA EJEMPLO DE LA  PAGINA TOKEN TOGGLE
 const span = document.querySelectorAll(".option");
 
 for (const boton of span) {
@@ -100,9 +114,7 @@ boton.addEventListener('click', function() {
     boton.textContent = `'active' removed; classList is now "${classes}".`;
   }
 })
-}
-
-
+} 
 
 /// CREA LAS CARDS DE EXPERIENCIA Y ACTIVIDADES Y MODIFICO EL DOM HTML
 const actividadesyexperiencia = document.getElementById("Actividadess")
